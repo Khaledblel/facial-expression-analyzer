@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
+import os
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 
@@ -15,6 +16,11 @@ def preprocess_image(image_path):
     x = np.expand_dims(x, axis=0)
     x /= 255
     return x
+
+def create_uploads_folder():
+    uploads_folder = 'uploads'
+    if not os.path.exists(uploads_folder):
+        os.makedirs(uploads_folder)
 
 @app.route('/')
 def index():
@@ -30,8 +36,10 @@ def predict():
     if file.filename == '':
         return jsonify({'error': 'No selected file'})
 
+    create_uploads_folder()  # Ensure 'uploads' folder exists
+
     if file:
-        file_path = "uploads/" + file.filename
+        file_path = os.path.join("uploads", file.filename)
         file.save(file_path)
 
         processed_image = preprocess_image(file_path)
