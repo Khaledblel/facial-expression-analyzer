@@ -36,8 +36,7 @@ def predict():
     if file.filename == '':
         return jsonify({'error': 'No selected file'})
 
-    create_uploads_folder()  # Ensure 'uploads' folder exists
-
+    create_uploads_folder() 
     if file:
         file_path = os.path.join("uploads", file.filename)
         file.save(file_path)
