@@ -35,7 +35,7 @@ This repository contains code for a simple web application that predicts facial 
 
 ## 🌟 Introduction
 
-The **Facial Expression Analyzer** is a web application that allows users to upload an image containing a face, and it predicts the emotion expressed in the face. The deep learning model used for prediction has been pre-trained to recognize seven different emotions: Anger, Disgust, Fear, Happy, Sad, Surprise, and Neutral.
+The **Facial Expression Analyzer** is a web application that allows users to upload an image containing a face, and it predicts the emotion expressed in the face. The deep learning model used for prediction has been pre-trained with the FER2013 dataset to recognize seven different emotions: Anger, Disgust, Fear, Happy, Sad, Surprise, and Neutral.
 
 ![image](https://github.com/Khaledblel/facial-expression-analyzer/assets/93343332/3392365c-55f0-42a4-a870-bf3bd2f10667)
 
