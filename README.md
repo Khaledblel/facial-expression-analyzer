@@ -23,14 +23,14 @@ This repository contains code for a simple web application that predicts facial 
 
 
 ##  📚 Table of Contents
-- [Introduction](#Introduction)
+- [Introduction](#-Introduction)
 - [Features](#-features)
--  [Dependencies](#dependencies)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Usage](#Usage)
-- [Contributing](#Contributing)
-- [License](#license)
+-  [Dependencies](#-dependencies)
+- [Project Structure](#-project-structure)
+- [Getting Started](#-getting-started)
+- [Usage](#-Usage)
+- [Contributing](#-Contributing)
+- [License](#-license)
 
 
 ## 🌟 Introduction
