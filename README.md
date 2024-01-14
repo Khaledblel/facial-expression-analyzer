@@ -24,7 +24,7 @@ This repository contains code for a simple web application that predicts facial 
 
 ##  📚 Table of Contents
 - [Introduction](#Introduction)
-- [Features](#features)
+- [Features](#-features)
 -  [Dependencies](#dependencies)
 - [Project Structure](#project-structure)
 - [Getting Started](#getting-started)
